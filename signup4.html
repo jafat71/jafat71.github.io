@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BetAPP</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333333;
+    }
+
+    form {
+      max-width: 400px;
+      margin: 0 auto;
+      background-color: #ffffff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+      display: block;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    input[type="submit"] {
+      background-color: #4caf50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    input[type="submit"]:hover {
+      background-color: #45a049;
+    }
+
+    .apuestas-container {
+      margin-top: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .apuesta {
+      background-color: #ffffff;
+      border-radius: 5px;
+      padding: 20px;
+      margin: 10px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .apuesta h2 {
+      color: #333333;
+      margin-bottom: 10px;
+    }
+
+    .apuesta p {
+      margin-bottom: 20px;
+    }
+
+    .apuesta button {
+      background-color: #4caf50;
+      color: #ffffff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .apuesta button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <h1>Apuestas en línea</h1>
+
+  <form>
+    <label for="nombre">Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br>
+
+    <label for="contrasena">Contraseña:</label>
+    <input type="password" id="contrasena" name="contrasena" required>
+
+    <br>
+
+    <input type="submit" value="Registrarse">
+  </form>
+
+  <div class="apuestas-container">
+    <div class="apuesta">
+      <h2>Partido 1</h2>
+      <p>Equipo A vs. Equipo B</p>
+      <p>Fecha: 01/06/2023</p>
+      <button>Apuesta</button>
+    </div>
+
+    <div class="apuesta">
+      <h2>Partido 2</h2>
+      <p>Equipo C vs. Equipo D</p>
+      <p>Fecha: 02/06/2023</p>
+      <button>Apuesta</button>
+    </div>
+  </div>
+</body>
+</html>
