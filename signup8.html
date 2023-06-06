@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BetAPP</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+        }
+
+        body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f2f2;
+        margin: 0;
+        padding: 20px;
+        }
+
+        h1 {
+        text-align: center;
+        color: #333333;
+        animation: fadeIn 1s;
+        }
+
+        form {
+        max-width: 400px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s;
+        }
+
+        label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        }
+
+        input[type="submit"] {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+        background-color: #45a049;
+        }
+
+        .apuestas-container {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        }
+
+        .apuesta {
+        background-color: #ffffff;
+        border-radius: 5px;
+        padding: 20px;
+        margin: 10px;
+        text-align: center;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        animation: fadeIn 1s;
+        }
+
+        .apuesta h2 {
+        color: #333333;
+        margin-bottom: 10px;
+        }
+
+        .apuesta p {
+        margin-bottom: 20px;
+        }
+
+        .apuesta button {
+        background-color: #4caf50;
+        color: #ffffff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        .apuesta button:hover {
+        background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-4xl font-bold">Apuestas en línea</h1>
+
+    <form>
+        <div class="mb-4">
+        <label for="nombre" class="block font-bold">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-2 border rounded">
+        </div>
+
+        <div class="mb-4">
+        <label for="email" class="block font-bold">Email:</label>
+        <input type="email" id="email" name="email" required class="w-full px-4 py-2 border rounded">
+        </div>
+
+        <div class="mb-4">
+        <label for="contrasena" class="block font-bold">Contraseña:</label>
+        <input type="password" id="contrasena" name="contrasena" required class="w-full px-4 py-2 border rounded">
+        </div>
+
+        <button type="submit" class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Registrarse</button>
+    </form>
+
+    <div class="apuestas-container">
+        <div class="apuesta">
+        <h2 class="text-2xl font-bold">Partido 1</h2>
+        <p>Equipo A vs. Equipo B</p>
+        <p>Fecha: 01/06/2023</p>
+        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Apuesta</button>
+        </div>
+
+        <div class="apuesta">
+        <h2 class="text-2xl font-bold">Partido 2</h2>
+        <p>Equipo C vs. Equipo D</p>
+        <p>Fecha: 02/06/2023</p>
+        <button class="bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded">Apuesta</button>
+        </div>
+    </div>
+
+    <script src="https://cdn.tailwindcss.com/2.2.19/tailwind.min.js"></script>
+    </body>
+</html>
